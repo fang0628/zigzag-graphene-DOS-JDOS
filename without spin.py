@@ -78,9 +78,9 @@ dos = compute_DOS(bands, dos_w)
 # Plot DOS
 plt.figure(figsize=(10,6))
 plt.plot(dos_w, dos)
-plt.title("DOS")
+plt.title("Zigzag Graphene DOS")
 plt.xlabel('w')
-plt.ylabel('Density')
+plt.ylabel('DOS(w)')
 plt.grid(True)
 plt.show()
 
@@ -103,8 +103,8 @@ jdos = [JDOS_func(Ec, Ev, w_val, r, dk) for w_val in jdos_w]
 # Plot JDOS
 plt.figure(figsize=(10,6))
 plt.plot(jdos_w, jdos)
-plt.title("JDOS vs. w")
+plt.title("Zigzag Graphene JDOS")
 plt.xlabel('w')
-plt.ylabel('JDOS')
+plt.ylabel('JDOS(w)')
 plt.grid(True)
 plt.show()
